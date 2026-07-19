@@ -1,19 +1,19 @@
-# Goody & Grant landing pages
+# Oddjobs landing page
 
 ## Files
 
-- `/sealfinger/index.html` — landing page
-- `/assets/sealfinger-cover.jpg` — book cover used by the page
+- `/oddjobs/index.html` — landing page
+- `/assets/oddjobs-cover.jpg` — book cover used by the page
 
 ## Live URL when deployed
 
-`https://content.goodyandgrant.com/sealfinger/`
+`https://content.goodyandgrant.com/oddjobs/`
 
 ## Outbound link
 
 The main button sends readers to:
 
-`https://readerlinks.com/l/5448935`
+`https://readerlinks.com/l/5531503`
 
 ## Meta Pixel
 
@@ -23,12 +23,12 @@ Events included:
 
 - `PageView` on page load
 - `ViewContent` on page load
-- `SamApplewhiteAmazonClick` when a reader clicks the Amazon/Readerlinks button
+- `OddjobsAmazonClick` when a reader clicks the Amazon/ReaderLinks button
 
 Custom click event parameters:
 
-- `series: sam_applewhite`
-- `source_page: sealfinger`
+- `series: oddjobs`
+- `source_page: oddjobs`
 - `destination: amazon`
 - `cta: hero`
 
@@ -36,14 +36,8 @@ Custom click event parameters:
 
 Upload the contents of this folder to the root of the `goodyandgrant-pages` repository.
 
-The folder structure should look like this:
-
 ```text
-/assets/sealfinger-cover.jpg
-/sealfinger/index.html
+/assets/oddjobs-cover.jpg
+/oddjobs/index.html
 README.md
 ```
-
-If GitHub Pages is already connected to `content.goodyandgrant.com`, the page should become available at:
-
-`https://content.goodyandgrant.com/sealfinger/`
