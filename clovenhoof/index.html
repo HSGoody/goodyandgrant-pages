@@ -106,7 +106,7 @@
 
     .choices {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: 1fr;
       gap: 1rem;
       align-items: stretch;
     }
@@ -142,14 +142,17 @@
       text-align: center;
     }
 
-    .button-secondary {
-      background: transparent;
-      border: 2px solid #d32121;
+
+    .audio-note {
+      margin-top: 1.25rem;
+      padding: 1.25rem;
+      border-left: 3px solid #d32121;
+      background: rgba(255,255,255,0.04);
+      border-radius: 0 12px 12px 0;
     }
 
-    .button-secondary:hover {
-      background: #7d1212;
-    }
+    .audio-note strong { color: #fff; font-size: 1.1rem; }
+    .copy .audio-note p { margin: 0.4rem 0 0; font-size: 1rem; }
 
     .quote {
       margin-top: 2rem;
@@ -253,11 +256,11 @@
           Instead he gets awkward neighbours, cheap wine and far too much time on his hands.
         </p>
 
-        <div class="choice-heading">How would you like to read?</div>
+        <div class="choice-heading">Start your descent into British comic fantasy</div>
 
         <div class="choices">
           <div class="choice">
-            <strong>Ebook or Kindle Unlimited</strong>
+            <strong>Ebook or Kindle+</strong>
             <p>Start reading Clovenhoof now on Amazon.</p>
             <a
               class="button"
@@ -272,21 +275,12 @@
               Read on Amazon
             </a>
           </div>
-
-          <div class="choice">
-            <strong>Paperbacks &amp; special editions</strong>
-            <p>Browse physical books and the five-book slipcase in our shop.</p>
-            <a
-              class="button button-secondary"
-              href="https://readerlinks.com/l/5608443"
-              target="_blank"
-              rel="noopener"
-              onclick="fbq('trackCustom', 'ClovenhoofShopifyClick');"
-            >
-              Shop paperbacks
-            </a>
-          </div>
         </div>
+
+        <aside class="audio-note" aria-label="Audiobook edition">
+          <strong>Prefer to listen?</strong>
+          <p>Also available on Audible, performed by Audie Award-winning narrator Matthew Lloyd Davies.</p>
+        </aside>
 
         <div class="quote">
           Perfect for readers who enjoy British comic fantasy.
@@ -335,7 +329,7 @@
   <section class="section cta-section">
     <div class="section-inner">
 
-      <h2>Choose your edition</h2>
+      <h2>Start with Book One</h2>
 
       <img
         class="cta-cover"
@@ -344,10 +338,11 @@
       >
 
       <p>Meet the former ruler of Hell at the lowest point in his career.</p>
+      <p>Read the ebook or enjoy the audiobook on Audible, performed by Audie Award-winning narrator Matthew Lloyd Davies.</p>
 
       <div class="choices">
         <div class="choice">
-          <strong>Ebook or Kindle Unlimited</strong>
+          <strong>Ebook or Kindle+</strong>
           <p>Start with Book One on Amazon.</p>
           <a
             class="button"
@@ -360,20 +355,6 @@
             "
           >
             Read on Amazon
-          </a>
-        </div>
-
-        <div class="choice">
-          <strong>Paperbacks &amp; special editions</strong>
-          <p>Visit the Goody &amp; Grant shop for physical editions.</p>
-          <a
-            class="button button-secondary"
-            href="https://readerlinks.com/l/5608443"
-            target="_blank"
-            rel="noopener"
-            onclick="fbq('trackCustom', 'ClovenhoofShopifyClick');"
-          >
-            Shop paperbacks
           </a>
         </div>
       </div>
