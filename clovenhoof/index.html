@@ -151,6 +151,13 @@
       border-radius: 0 12px 12px 0;
     }
 
+    .audio-note audio {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      margin-top: 1rem;
+    }
+
     .audio-note strong { color: #fff; font-size: 1.1rem; }
     .copy .audio-note p { margin: 0.4rem 0 0; font-size: 1rem; }
 
@@ -280,6 +287,12 @@
         <aside class="audio-note" aria-label="Audiobook edition">
           <strong>Prefer to listen?</strong>
           <p>Also available on Audible, performed by Audie Award-winning narrator Matthew Lloyd Davies.</p>
+          <p id="audio-sample-label">Listen to a sample of Clovenhoof:</p>
+          <audio id="clovenhoof-sample" controls preload="none" aria-labelledby="audio-sample-label">
+            <source src="clovenhoof-sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio player.
+            <a href="clovenhoof-sample.mp3">Listen to the sample</a>.
+          </audio>
         </aside>
 
         <div class="quote">
@@ -367,6 +380,12 @@
   </footer>
 
   <script>
+    document.getElementById('clovenhoof-sample').addEventListener('play', () => {
+      if (typeof fbq === 'function') {
+        fbq('trackCustom', 'ClovenhoofAudioSamplePlay');
+      }
+    }, { once: true });
+
     let engagedTracked = false;
 
     window.addEventListener('scroll', () => {
