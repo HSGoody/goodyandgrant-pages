@@ -221,6 +221,11 @@
       font-size: 0.95rem;
     }
 
+    .audio-sample { margin-top: 24px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+    .audio-sample h2 { margin: 0 0 6px; font-size: 1.12rem; }
+    .audio-sample p { margin: 0 0 12px; color: var(--muted); font-size: 0.95rem; }
+    .audio-sample audio { display: block; width: 100%; }
+
     .series-note {
       margin-top: 26px;
       color: var(--muted);
@@ -321,6 +326,15 @@
           <a class="button amazon-link" href="https://readerlinks.com/l/5733802" rel="noopener" data-cta="hero-canada" data-store="CA">Shop Amazon Canada</a>
           <a class="button amazon-link" href="https://readerlinks.com/l/5733803" rel="noopener" data-cta="hero-us" data-store="US">Shop Amazon US</a>
         </div>
+
+        <section class="audio-sample" aria-labelledby="audio-heading">
+          <h2 id="audio-heading">Listen to a little Oddjobs</h2>
+          <p>Also available as an audiobook, narrated by <strong>Matthew Lloyd Davies</strong>. Try a sample:</p>
+          <audio controls preload="none" aria-label="Oddjobs audiobook sample narrated by Matthew Lloyd Davies">
+            <source src="https://samples.audible.co.uk/bk/acx0/135238/bk_acx0_135238_sample.mp3" type="audio/mpeg" />
+            Your browser does not support the audio player. <a href="https://samples.audible.co.uk/bk/acx0/135238/bk_acx0_135238_sample.mp3">Listen to the audiobook sample</a>.
+          </audio>
+        </section>
 
         <p class="series-note"><strong>Oddjobs</strong> begins a five-book comedy of escalating cosmic disasters, workplace impossibilities and ordinary people trying to remain professional while reality falls apart.</p>
 
