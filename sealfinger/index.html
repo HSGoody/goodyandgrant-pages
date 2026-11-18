@@ -220,6 +220,11 @@
       font-size: 0.95rem;
     }
 
+    .audio-sample { margin-top: 24px; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
+    .audio-sample h2 { margin: 0 0 6px; font-size: 1.12rem; }
+    .audio-sample p { margin: 0 0 12px; color: var(--muted); font-size: 0.95rem; }
+    .audio-sample audio { display: block; width: 100%; }
+
     .series-note {
       margin-top: 26px;
       color: var(--muted);
@@ -321,6 +326,15 @@
           <a class="button amazon-link" href="https://readerlinks.com/l/5448935" rel="noopener" data-cta="hero">Start the series</a>
           <span class="amazon-note">You’ll go to Amazon.</span>
         </div>
+
+        <section class="audio-sample" aria-labelledby="audio-heading">
+          <h2 id="audio-heading">Listen to Sealfinger</h2>
+          <p>Also available as an audiobook. Meet Sam Applewhite in this audio sample:</p>
+          <audio controls preload="none" aria-label="Sealfinger audiobook sample">
+            <source src="https://samples.audible.co.uk/bk/acx0/260541/bk_acx0_260541_sample.mp3" type="audio/mpeg" />
+            Your browser does not support the audio player. <a href="https://samples.audible.co.uk/bk/acx0/260541/bk_acx0_260541_sample.mp3">Listen to the audiobook sample</a>.
+          </audio>
+        </section>
 
         <p class="series-note"><strong>Sealfinger</strong> begins a seven-book series of escalating criminal disasters, with Sam stuck at the point where ordinary life meets people making very bad decisions.</p>
 
